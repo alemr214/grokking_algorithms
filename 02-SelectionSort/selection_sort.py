@@ -32,7 +32,7 @@ def selection_sort(arr: list[int]) -> list[int]:
     """
     new_arr = []
     copied_arr = list(arr)
-    for i in range(len(copied_arr)):
+    for _ in range(len(copied_arr)):
         smallest = find_smallest(copied_arr)
         new_arr.append(copied_arr.pop(smallest))
 
